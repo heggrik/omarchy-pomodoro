@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.hennil.pomodoro-timer",
+  "name": "Pomodoro Timer",
+  "version": "1.0.0",
+  "author": "hennil",
+  "license": "MIT",
+  "description": "Circular pomodoro timer with minute presets, custom durations, auto-chaining focus/break cycles, and a completion chime for the Omarchy bar.",
+  "kinds": ["bar-widget", "service"],
+  "entryPoints": { "barWidget": "BarWidget.qml", "service": "TimerEngine.qml" },
+  "barWidget": {
+    "displayName": "Pomodoro Timer",
+    "category": "Productivity",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
