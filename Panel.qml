@@ -19,9 +19,14 @@ Panel {
 
   function resolveService() {
     if (root.service) return root.service
-    if (root.bar && root.bar.shell
-        && typeof root.bar.shell.ensureService === "function") {
-      root.service = root.bar.shell.ensureService(root.moduleName)
+    var api = root.bar && root.bar.shell ? root.bar.shell : null
+    if (!api) return null
+    if (typeof api.serviceFor === "function") {
+      root.service = api.serviceFor(root.moduleName)
+      return root.service
+    }
+    if (typeof api.ensureService === "function") {
+      root.service = api.ensureService(root.moduleName)
       return root.service
     }
     return null
