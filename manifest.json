@@ -3,7 +3,7 @@
   "id": "io.github.hennil.pomodoro-timer",
   "name": "Pomodoro Timer",
   "version": "1.0.0",
-  "author": "hennil",
+  "author": "Henrik Nilsenius",
   "license": "MIT",
   "description": "Circular pomodoro timer with minute presets, custom durations, auto-chaining focus/break cycles, and a completion chime for the Omarchy bar.",
   "kinds": ["bar-widget", "service"],
