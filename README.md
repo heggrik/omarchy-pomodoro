@@ -26,7 +26,7 @@ URL above with yours, and update the `id` in `manifest.json` (and the
 ## Validate
 
 ```bash
-PLUGIN_ID="io.github.hennil.pomodoro-timer"
+PLUGIN_ID="io.github.heggrik.pomodoro-timer"
 PLUGIN_DIR="$HOME/.config/omarchy/plugins/$PLUGIN_ID"
 omarchy plugin validate "$PLUGIN_DIR"
 qmllint -I "$OMARCHY_PATH/shell" "$PLUGIN_DIR/BarWidget.qml" "$PLUGIN_DIR/Panel.qml" "$PLUGIN_DIR/TimerEngine.qml"
@@ -67,9 +67,9 @@ to on each launch.
 ## Hyprland keybinds (optional, in addition to bar clicks)
 
 ```ini
-bind = SUPER, P, exec, omarchy-shell shell toggle io.github.hennil.pomodoro-timer '{}'
-bind = SUPER SHIFT, P, exec, omarchy-shell shell call io.github.hennil.pomodoro-timer startPause ""
-bind = SUPER SHIFT, N, exec, omarchy-shell shell call io.github.hennil.pomodoro-timer skip ""
+bind = SUPER, P, exec, omarchy-shell shell toggle io.github.heggrik.pomodoro-timer '{}'
+bind = SUPER SHIFT, P, exec, omarchy-shell shell call io.github.heggrik.pomodoro-timer startPause ""
+bind = SUPER SHIFT, N, exec, omarchy-shell shell call io.github.heggrik.pomodoro-timer skip ""
 ```
 
 `startPause`, `skip`, and `reset` are also exposed on the bar widget, so they
